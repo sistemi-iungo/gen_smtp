@@ -35,7 +35,9 @@
 -endif.
 
 %10mb
--define(DEFAULT_MAXSIZE, 10485760).
+%-define(DEFAULT_MAXSIZE, 10485760).
+%40mb
+-define(DEFAULT_MAXSIZE, 41943040).
 -define(BUILTIN_EXTENSIONS, [
     {"SIZE", integer_to_list(?DEFAULT_MAXSIZE)},
     {"8BITMIME", true},
